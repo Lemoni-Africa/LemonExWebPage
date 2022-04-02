@@ -1,0 +1,86 @@
+/* @import "~swiper/css"; */
+/* @import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination"; */
+#particles-js {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 10px;
+  width: 100%;
+}
+
+#particles-js canvas {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+/* .splide__slide is-active is-visible{
+
+} */
+/* splide__slide.is-active.is-visible] */
+
+.splide__slide {
+  width: 400px !important;
+}
+
+.ng-tns-c53-0 {
+  display: flex;
+}
+
+.owl-stage-outer.ng-star-inserted {
+  display: flex;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+[nz-carousel-content] {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  color: #fff;
+  overflow: hidden;
+}
+
+h3 {
+  color: #fff;
+  margin-bottom: 0;
+  user-select: none;
+}
