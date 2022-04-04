@@ -46,6 +46,10 @@ import { CompanyComponent } from './Components/company/company.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SwiperModule } from 'swiper/angular';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { OurServicesComponent } from './Components/our-services/our-services.component';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
+
 registerLocaleData(en);
 
 @NgModule({
@@ -55,6 +59,8 @@ registerLocaleData(en);
     AppLayoutComponent,
     FaqComponent,
     CompanyComponent,
+    AboutUsComponent,
+    OurServicesComponent,
   ],
   imports: [
     BrowserModule,
@@ -105,6 +111,7 @@ registerLocaleData(en);
     CarouselModule,
     SwiperModule,
     NzCarouselModule,
+    NgxUiLoaderModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

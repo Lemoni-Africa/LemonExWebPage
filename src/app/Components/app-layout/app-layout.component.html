@@ -66,6 +66,18 @@
     data-offset="80"
     style="background: transparent; z-index: 1002"
   >
+    <ngx-ui-loader
+      [hasProgressBar]="false"
+      [loaderId]="'loader-01'"
+      [fgsColor]="'#adcf1a'"
+      [fgsType]="'square-loader'"
+      [fgsSize]="0"
+      [textColor]="'#FFFFFF'"
+      [textPosition]="'center-center'"
+      [logoPosition]="'center-center'"
+      [logoSize]="100"
+      [logoUrl]="'/assets/0003.png'"
+    ></ngx-ui-loader>
     <!-- <div></div> -->
     <!-- <div id="particles-js"></div> -->
 
@@ -79,7 +91,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-4">
-            <div class="site-logo">
+            <div (click)="gotoHome()" class="site-logo">
               <a class="navbar-logo"
                 ><img
                   style="height: 100px; width: 100px; margin-top: -1rem"
@@ -94,10 +106,10 @@
               <nav style="margin-top: 50px" id="main-menu" class="ml-auto">
                 <ul>
                   <li>
-                    <a (click)="goToDynamic('home')"> <b>Home</b></a>
+                    <a (click)="gotoHome()"> <b>Home</b></a>
                   </li>
                   <li>
-                    <a (click)="goToDynamic('services')"><b>Our Services</b></a>
+                    <a (click)="gotoOurServices()"><b>Our Services</b></a>
                   </li>
                   <!-- <li>
                     <a (click)="goToDynamic('faq')"><b>Faq</b></a>
@@ -105,7 +117,7 @@
                   <li>
                     <a class="arrow-btn"><b>Company</b> </a><i class="fa"></i>
                     <ul class="sub-menu">
-                      <li><a (click)="goToDynamic('about')">About Us</a></li>
+                      <li><a (click)="gotoAboutUs()">About Us</a></li>
                       <li>
                         <a
                           target="_blank"
@@ -119,7 +131,7 @@
                     <a class="arrow-btn ml-2"><b>Resources</b> </a
                     ><i class="fa"></i>
                     <ul class="sub-menu">
-                      <li><a (click)="goToDynamic('faq')">Faq</a></li>
+                      <li><a (click)="gotoFAQs()">FAQs</a></li>
                       <li><a>LemoniAfrica Academy</a></li>
                       <li><a>LemoniAfrica Blog</a></li>
                       <li>
