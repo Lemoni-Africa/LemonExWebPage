@@ -6,6 +6,10 @@
         <div class="hero-text">
           <br /><br />
           <br /><br />
+          	<!-- START LIVE MARKET -->
+     
+      
+		<!-- END LIVE MARKET -->
           <h2>Start your crypto journey with us.</h2>
           <!-- <p>
               We offers users a fully operational long-term rental platform.
@@ -22,7 +26,7 @@
               > -->
             <a
               style="background-color: green; border-color: green; color: black"
-              (click)="goToDynamic('about')"
+              (click)="gotoFAQs()"
               class="btn_two wow bounceIn"
               data-wow-delay=".8s"
               >learn More</a
@@ -53,7 +57,43 @@
           <img src="/assets/tiles1.png" alt="" />
         </div>
       </div> -->
-      <!--- END COL -->
+      <!--- END COL --> 
+      <div class="table-responsive col-lg-5 col-sm-12 col-xs-12 text-center" style="margin-top: 350px;">
+        <table class="table table-dark table-borderless table-hover">
+          <thead >
+            <tr >
+              <th scope="col">#</th>
+              <th scope="col">Currency</th>
+              <th scope="col">Price (USD)</th>
+              <th scope="col">Price (NGN)</th>
+            </tr>
+          </thead>
+          <div style="text-align: center;">
+              <nz-spin
+              *ngIf="spin"
+              nzSimple
+              [nzSize]="'large'"
+              style="
+                text-align: center;
+                border-radius: 4px;
+                margin-bottom: 20px;
+                padding: 30px 50px;
+                margin: 20px 0;
+              "
+            ></nz-spin>
+         
+          </div>
+          <tbody >
+            <tr *ngFor="let data of coinResult; let i = index">
+              <th scope="row">{{ i + 1}}</th>
+              <td><img style="width: 20px;" [src]="data.image" alt="" srcset="">  {{data.name}}</td>
+              <td>{{data.current_price_usd | currency:'USD':'symbol' }}</td>
+              <td>{{data.current_price_ngn | currency:'₦':'symbol' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
     </div>
     <!--- END ROW -->
   </div>

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  liveCoinUrl: 'https://verifier-api-lemoni.herokuapp.com',
 };
