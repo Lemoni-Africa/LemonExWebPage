@@ -89,4 +89,10 @@ export class AppLayoutComponent implements OnInit {
       window.location.reload();
     });
   }
+
+  gotoHelpCenter() {
+    this.router.navigateByUrl('/help-center').then(() => {
+      window.location.reload();
+    });
+  }
 }

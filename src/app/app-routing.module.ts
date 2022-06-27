@@ -4,6 +4,7 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { AppLayoutComponent } from './Components/app-layout/app-layout.component';
 import { CompanyComponent } from './Components/company/company.component';
 import { FaqComponent } from './Components/faq/faq.component';
+import { HelpCenterComponent } from './Components/help-center/help-center.component';
 import { HomeComponent } from './Components/home/home.component';
 import { OurServicesComponent } from './Components/our-services/our-services.component';
 const routes: Routes = [
@@ -34,6 +35,11 @@ const routes: Routes = [
       {
         path: 'faqs',
         component: FaqComponent,
+        //canActivate: [AuthGuard]
+      },
+      {
+        path: 'help-center',
+        component: HelpCenterComponent,
         //canActivate: [AuthGuard]
       },
       {

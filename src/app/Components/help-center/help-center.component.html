@@ -1,0 +1,635 @@
+<section style="margin-top: 50px;" id="roadmap" class="roadmap_area section-padding">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Welcome to our Help Center</h2>
+      <span></span>
+      <!-- <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat.
+        </p> -->
+    </div>
+  </div>
+  <!-- END CONTAINER -->
+</section>
+
+<div class="row container">
+  <div class="col-md-6 text-center ml-5">
+    <div class="container">
+      <ul *ngFor="let item of category">
+          <div (click)="getItem(item)" class="rcorners1">
+             <h5 style="margin-left: 30px;margin-top:10px">{{item.name}}</h5>
+          </div>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="Id == 1" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header1" [nzActive]="false">
+          <p>We are sorry that you are currently not able to login to the app. kindly try deleting the app and downloading it again. If this doesn’t work, please contact us.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header2" [nzActive]="false">
+          <p>To download the LemonEx app please follow the below easy steps: <br>
+            1. Visit Google playstore if you use an android device and the App store if you use an IOS device <br>
+            2. Search for LemonEx on your App/ Google store <br>
+            3. Click on download, after downloading your app will be installed automatically or click on the install prompt depending on your device
+           </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header3" [nzActive]="false">
+          <p>The Lemon EX app have exciting features like. <br>
+
+            1. You can buy and sell crypto currency<br>
+            2. Send and receive crypto currency <br>
+            3. Hold your local currency deposit in your wallet<br>
+            4. We support 3 cryptocurrencies that are available for instant crypto exchange and purchase at the best execution prices.
+        </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header4" [nzActive]="false">
+          <p>Kindly be informed that you can only access LemonEx via the mobile app for now and we are working towards building the web version just for you. <br>
+
+            Please note that we are constantly working towards providing you with the most seamless user experience.
+           </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header5" [nzActive]="false">
+          <p>Can I have multiple accounts on the LemonEx app? <br>
+            You are only allowed to have one account on LemonEx.
+            Be informed that operating of multiple account is not allowed.
+            Please note that your accounts will be closed when discovered.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header6" [nzActive]="false">
+          <p>Our application is supported by devices within this specification and above: <br>
+            Android - Min (8 - Oreo), iOS - Min(10 )</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category1header7" [nzActive]="false">
+          <p>The LemonEx mobile app is secure, all information on the Mobile App is encrypted and none of your personal information is stored on your mobile device.
+            With the 2FA authenticator activated also nobody will be able to login to your account without having access to your personal device and provided login information.
+            Please do not give out your password, OTP, or authenticator code to any third party as we will not require such information from you.
+        </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 2" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header1" [nzActive]="false">
+          <p>  Signing up on the LemonEx is easy and seamless!  <br>
+            1. Since you must have downloaded the app, open your device and click on the LemonEx app. <br>
+            2. Then click on create an account, fill all information as requested and click on create account. <br>
+            3. A verification email will be sent to your registered email address, open the email, and click on verify account to verify your email. <br>
+            4. You will receive a prompt message stating that your email has been verified. <br>
+            5. Go back to the app and login using your registered email and password.<br>
+            6. Once you signup you will be prompted to activate a 2FA authentication method, please click on any one of your choices and follow the prompt.<br>
+            7. Now your 2FA authenticator has been set up you can start trading!.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header2" [nzActive]="false">
+          <p>To download the LemonEx app please follow the below easy steps: <br>
+            A verification email will be sent to your email immediately you sign up. <br>
+            These are the steps to take if you do not receive the verification email; <br>
+            1. Reload your email to confirm if its updated<br>
+            2. Check the Spam or Junk folder on your email<br>
+            3. Register again using same email, if you do not get an error message that this email or account already exist, please note that your email address was not properly inputted previously and check your email box for the verification email. <br>
+
+            If after the above steps you did not receive any email verification link, please contact support for further assistance
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header3" [nzActive]="false">
+          <p>You will not be able to continue on the LemonEx app if you do not enable any of the 2FA authenticator.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header4" [nzActive]="false">
+          <p>	Check your inbox, spam, and junk email. Also check your email settings or phone settings if messages like this have not been backlisted. <br>
+            After carrying out the above-mentioned checks and no email was sent, please contact support for further assistance.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header5" [nzActive]="false">
+          <p>1.Ensure the “Google Authenticator” app is installed on your Mobile phone. <br>
+            2. Ensure that you are inputting the 2FA code within the stipulated timeframe <br>
+            3. Ensure that you are inputting the correct code by copy and paste method, instead of filling it manually.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header6" [nzActive]="false">
+          <p>Yes, you can. However, you are required to first verify your email by clicking the verification link sent to your inbox. <br>
+            Secondly please check your phone settings to enable location when using the LemonEx app. <br>
+            Thirdly please login using your email address and password registered. <br>
+            After carrying out the above-mentioned checks and you are still unable to login, please contact support for further assistance
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category2header7" [nzActive]="false">
+          <p> Kindly be informed that the current version of the app is not fingerprint or face ID enabled. <br> However, this login options will be made available soon!
+            Please note that we are constantly working towards providing you with the most seamless user experience.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 3" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header1" [nzActive]="false">
+          <p> There are 3 account verification levels and here's what you need to know about each of them: <br>
+
+            <b> LEVEL 1. (NIN Phone number)</b> <br>
+            To be on the Level I account tier you need to verify your NIN Phone number. Please note that this verification is done instantly during registration, so we advise that you use your NIN phone number when registering on the app. Below is the transaction limit for this account tier:
+            <br>
+            Deposit: Unlimited deposit <br>
+            Withdrawal: (to be converted to Naira at the current exchange rate) <br>
+            Daily –   $500 <br>
+            Monthly- $20,000 <br>
+
+           <b>LEVEL 2. (BVN verification and NIN phone number)</b> <br>
+            These are for customers that we were able to verify their NIN phone number and BVN on the verification page without uploading any Government issued ID card and Passport Photograph. Below is the transaction limit for this account tier:
+            <br>
+            Deposit: Unlimited deposit <br>
+            Withdrawal: (to be converted to Naira at the current exchange rate) <br>
+            Daily – $2,000 <br>
+            Monthly- $20,000 <br>
+
+           <b>LEVEL 3. (Government issued ID, Passport Photograph (selfie capture) and BVN verification)</b> <br>
+            These is when the customer has fully gone through the verification process on the app providing the accurate information. And has received feedback of their verification approval. Please note that it takes within 5 to 15 mins for your verification to be approved depending on your network connectivity.
+            <br>
+            Here’s a list of accepted Government-issued identity cards
+            <br>
+            Driver’s License <br>
+            National Identity Card <br>
+            Permanent Voters Card <br>
+            International Passport <br>
+            Residence Permit <br>
+            On this level, you have access to unlimited deposits and unlimited withdrawal.
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header2" [nzActive]="false">
+          <p>Yes, you KYC might be rejected based on some reasons listed below: <br>
+            •	Wrong BVN provided <br>
+            •	Wrong Phone number provided <br>
+            •	When your Id card name differs from the name registered on the app <br>
+            •	BVN mismatch, this is when the name and information such as date of birth provided on the app differs from your BVN registered information. <br>
+            •	Blurry selfie image or ID card uploaded <br>
+            •	Wrong ID card number or ID card type <br>
+            Kindly note that you will get a feed back on why your KYC was not approved.
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header3" [nzActive]="false">
+          <p>To verify your Identity on the LemonEx app, please Login into your app and follow the below steps. <br>
+            1. Click on the horizontal lines displayed on the top left corner of your dashboard. <br>
+            2. On the next page that loads you will see KYC VERIFICATION, please click on it. <br>
+            3. This will open the Identity verification page where you must go through three stages which are: <br>
+            i. Personal: Fill out your First name, Last name, DOB, City and Address and click on next <br>
+            ii. ID proof: Fill out your BVN and ID information and click on next <br>
+            iii. Finish: Upload your ID card, picture and click on submit. <br>
+            Kindly ensure you fill in the appropriate details and follow all instructions prompted on the app.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header4" [nzActive]="false">
+          <p>	Verifying of your KYC documents may take up to 30 to 60 minutes during work hours. <br>
+            Kindly note that your KYC verification may take up to 24 hours if submitted outside working ours. <br>
+            Feedback will be provided via your email on why your documents or KYC was not approved, if rejected. Please note that you can resubmit immediately once you have all information requested.
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header5" [nzActive]="false">
+          <p>Uploading your profile on the LemonEx takes you less than 10 minutes! This is how to do it: <br>
+            1. Click on the horizontal lines displayed on the top left corner of your dashboard. <br>
+            2. On the next page that loads you will see PROFILE, please click on it. <br>
+            3. Input the below details <br>
+            -Username <br>
+            -First name <br>
+            -Last name  <br>
+            -Phone number <br>
+            -Country <br>
+            4. After you must have inputted the above information, please click on Submit.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header6" [nzActive]="false">
+          <p>How to change your name on the LemonEx app? <br>
+
+            To change your name kindly login to the app, <br>
+            1. Click on the horizontal lines displayed on the top left corner of your dashboard. <br>
+            2. On the next page that loads you will see PROFILE, please click on it. <br>
+            3. Change your name to your desired name. <br>
+            4. After you must have inputted the above information, please click on Submit to update. <br>
+
+            How do I change my date of birth? <br>
+
+            To change your date of birth registered on the LemonEx app,
+            kindly follow the steps below.
+            Contact us via ------ with the below information <br>
+
+            -Confirmation that you have updated your date of birth on the BVN portal (applicable to Nigerians only) / Share a picture of you holding your valid means of identification (non-Nigerians only) <br>
+            -Why you want to change your date of birth  <br>
+            -Attach your birth certificate or affidavit bearing the same date of birth you'd like to change to. <br>
+
+            How do I change my address? <br>
+
+            To change your registered on our platform. <br>
+
+            Kindly follow the steps below. <br>
+
+            Contact us via ------ with the below information <br>
+
+            -Why you want to change your address <br>
+            -A valid means of identification <br>
+            -Attach a utility bill or bank statement bearing the same address you'd like to change to. <br>
+
+            How can I change my login details? <br>
+            Please note that you currently cannot change your login details on the LemonEx app. For further assistance on this please contact support via ----</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header7" [nzActive]="false">
+          <p>If your KYC was rejected is possible that you must have inputted wrong information, or we were not able to verify your ID card or BVN at the time. Please try again with another ID card if available.
+            If not, please contact support for further assistance.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category3header8" [nzActive]="false">
+          <p>There are two ways of uploading your ID card and selfie image. You can either upload via photos/gallery/drive or do an instant capture with the camera option.
+             For upload via your gallery, drive, or photos please note that we only accept images in JPEG format.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 4" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category4header1" [nzActive]="false">
+          <p> Making deposit on the LemonEx app is seamless, swift, and easy. <br>
+            -Click on wallet <br>
+            -On the landing page click on deposit <br>
+            For cryptocurrency deposits: <br>
+            -Select the cryptocurrency of your choice <br>
+            -Scan the barcode and follow the prompt, ensure you are connected to an optimal network for a swift transaction and deposit will reflect within 30 to 60 minutes. <br>
+            For Naira deposits: <br>
+            -Please click on Naira <br>
+            -Copy the bank details and initiate a transfer,  <br>
+            -Ensure that the transfer’s name matches with what is displayed on the app. <br>
+            -Initiate your transfer  <br>
+            -On the app fill the deposit amount  <br>
+            -Upload the proof of transaction and click on submit, deposit will reflect within 30 to 60 minutes.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category4header2" [nzActive]="false">
+          <p>	To withdraw you should have added your preferred banking details on the LemonEx app on the bank column. <br>
+
+            •	Click Withdraw <br>
+            •	Select Naira – NGN <br>
+            •	Add Your Registered Bank <br>
+            •	Input amount <br>
+            •	Narration <br>
+            •	Click on submit <br>
+
+            Funds shall be disbursed into your account of choice within 15 to 30mins. </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category4header3" [nzActive]="false">
+          <p>Please note that your transaction limit is dependent on your account tier. <br>
+             Kindly click here to see our different account tiers and transaction limits.
+              (Takes them to What are the Account Verification Levels/Tiers?)
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category4header4" [nzActive]="false">
+          <p>All deposit made into your LemonEx wallet is free. However, kindly be informed that withdrawal is NOT free. Users will be charged 0.5% per withdrawal.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category4header5" [nzActive]="false">
+          <p>Please note that can only deposit in Naira. Once other currencies are allowed on the app you will be updated!
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 5" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category5header1" [nzActive]="false">
+          <p>Buying and selling of cryptocurrency on the LemonEx is app is swift, easy, and seamless. To know hoe, please follow the steps below. <br>
+            Wallet not funded. <br>
+            -Login to your app <br>
+            -Click on Wallet <br>
+            -Fund your wallet, if you do not know how to fund your wallet please click here (The click here should be a hyper link that will take them to how to make a deposit on their wallet). <br>
+            -Click on Buy  <br>
+            -Click on the crypto coin you want to buy <br>
+            -Indicate amount in Naira <br>
+            -Click on buy. <br>
+            Wallet Funded. <br>
+            If you already have funds in your wallet: <br>
+            -Login to your app <br>
+            -On the app dashboard click on buy <br>
+            -Click on the crypto coin you want to buy  <br>
+            -Indicate amount in Naira  <br>
+            -Click on buy. <br>
+            Please note that you shall receive value within 5 to 30 minutes</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category5header2" [nzActive]="false">
+          <p>Yes! You can buy or sell crypto currency instantly on the LemonEx app without peer-to-peer trading!
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category5header3" [nzActive]="false">
+          <p>Please note that you cannot do a peer-to-peer trade on the LemonEx app. Our trading is instant and seamless!
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category5header4" [nzActive]="false">
+          <p>LemonEx have the most amazing fees in the market! We charge only 1% per transaction when you buy or sell.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 6" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header1" [nzActive]="false">
+          <p>To get your Wallet address, please follow the below step <br>
+            -Login into your app <br>
+            -Go to your Dashboard <br>
+            -Click on deposit <br>
+            -Select the cryptocurrency of your choice <br>
+            -Your wallet address will be displayed <br>
+            Kindly note that each crypto currency has a different wallet address.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header2" [nzActive]="false">
+          <p> 	Please visit www.blockchain.com click on the mirror symbol and paste the transaction ID of the transaction on the search bar. Then click enter.
+            The next page will contain all the details of the transaction.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header3" [nzActive]="false">
+          <p>Your wallet address cannot be changed currently on LemonEx. <br>
+            However, in cases when you feel that your wallet address has been compromised, please reach out to us via our support email for further assistance.
+
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header4" [nzActive]="false">
+          <p>If you received cryptocurrency but it is not reflecting in LemonEx wallet although it has received 3 confirmations on the blockchain, please reach out to us via our support email for further assistance. along with the proof of transaction.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header5" [nzActive]="false">
+          <p>If you withdrew cryptocurrency and have not received it in more than 60 to 90 minutes, please reach out us via our support email for further assistance.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header6" [nzActive]="false">
+          <p>Kindly note that if you sent digital currencies to a wrong address, LemonEx will not be able to receive the digital currencies. Unlike commercials bank transfer, digital currencies sent cannot be reversed. Also, LemonEx does not know or control the address you likely sent it and has no means of recovering the coins.
+            <br>
+            We advise that when sending or receiving digital currencies you should scan the QR code or copy- paste the destination address or your LemonEx wallet address and double check you have copied the right address.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category6header7" [nzActive]="false">
+          <p>Yes, you can, you can transfer cryptocurrencies and wallet transfers from one LemonEx user account to another.
+<br>
+            However please note that the transaction will not be recorded on the b lock chain since it is an internal transfer, but your balances will be update on the blockchain.
+
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 7" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category7header1" [nzActive]="false">
+          <p>Below is the LemonEx security pro tips: <br>
+            -Don’t disclose your password to anyone! <br>
+            -Don’t call anyone’s phone number who claims to be LemonEx Support <br>
+            -Don’t send any money to anyone claiming to be a member of LemonEx. <br>
+            -If you think your account has been hacked reach out to <a  href = "mailto: helpzone@lemoniafrica.com">helpzone@lemoniafrica.com</a> to disable your account </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category7header2" [nzActive]="false">
+          <p>We can disable your account for different reasons such as: suspicious activities on your account, risk of fraud or for other reasons.
+            To re-enable your account please reach out to  <a  href = "mailto: helpzone@lemoniafrica.com">helpzone@lemoniafrica.com</a> for further assistance. </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category7header3" [nzActive]="false">
+          <p>Phishing is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers. It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message. The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware, the freezing of the system as part of a ransomware attack or the revealing of sensitive information. <br>
+            How to avoid phishing attacks. <br>
+            -Take note of messages filled with underlying errors like grammatical errors, typos, impersonal greetings, a domain name that is incorrectly spelt like lenonex.com, etc. are features a spoofed message would have. <br>
+
+            -Messages that come with threats and a sense of urgency could also be a sign of phishing., attackers lure unsuspecting victims by sending their messages with a sense of urgency.
+            <br>
+            -Please ensure to always browse with a secure website, this is usually indicated by a “https//” alongside a secure lock icon in the browser. <br>
+            -Ensure that your browser like Google Chrome or Mozilla Firefox is always updated to the latest version. <br>
+
+            -The safest way to log into LemonEx is via our app from Google playstore or app store, please note that we do not have a WEB LOGIN. <br>
+
+            -Install Chrome Netcraft Extention or Firefox Netcraft Anit-Phishing Extension. <br>
+
+            -Chrome Netcraft Extension    <br>
+
+            -Firefox Netcraft Anit-Phishing Extension <br>
+
+            -Keep your systems /applications updated to avoid the security bugs, install the anti-virus software and keep it up to date. <br>
+
+            -Do not connect to an untrusted wireless network. <br>
+            Lastly please report any suspected activities on your account.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category7header4" [nzActive]="false">
+          <p>You can change your password either via the Login dashboard or once you have logged into the app. <br>
+            To change your password via your login password  <br>
+            -Click on Forgot password <br>
+            -Input your registered email address <br>
+            -Input your new password <br>
+            -Confirm your new password <br>
+            -Input the verification code sent to you via your registered email <br>
+            -Click on submit <br>
+            -Go back to the login dashboard and login with your new password <br>
+            To change your password after your login, please follow the below steps. <br>
+            -Click on the horizontal lines displayed on the top left corner of your dashboard. <br>
+            -On the next page that loads you will see CHANGE PASSWORD, please click on it. <br>
+            -Input your old password <br>
+            -Input your new password <br>
+            -Confirm your new password <br>
+            -Click on submit <br>
+            -An email verification code will be sent to your registered email <br>
+            -Input the verification code sent to you via your registered email <br>
+            -Click on update. <br>
+            Logout of the APP and Login.
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category7header5" [nzActive]="false">
+          <p>Yes! we are present on the below social media platforms: <br>
+            Facebook: <a  href="https://www.facebook.com/LemoniAfrica/"
+            target="_blank">Lemoni Africa </a>
+            LinkedIn: <a href="https://www.linkedin.com/company/lemon-exchange"
+            target="_blank">Lemoni Africa </a>
+            Twitter:  <a href="https://twitter.com/lemoniafrica?s=21"
+            target="_blank">Lemoni Africa </a>
+            Instagram:  <a  href="https://instagram.com/lemoniafrica?utm_medium=copy_link"
+            target="_blank">lemoniafrica </a>
+            </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 8" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category8header1" [nzActive]="false">
+          <p>If you misplace your device we advise that you contact support immediately via<a  href = "mailto: helpzone@lemoniafrica.com">helpzone@lemoniafrica.com</a>    to help block your account.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category8header2" [nzActive]="false">
+          <p>If your device was stolen and your need to deactivate your 2FA authentication, please reach out to <a  href = "mailto: helpzone@lemoniafrica.com">helpzone@lemoniafrica.com</a>  to disable your 2FA.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+    </div>
+  </div>
+  <div *ngIf="Id == 9" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category9header1" [nzActive]="false">
+          <p> Two-factor authentication (2FA), sometimes referred to as two-step verification or dual-factor authentication, is a security process in which users provide two different authentication factors to verify themselves. 2FA is implemented to better protect the Users Data and Information.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category9header2" [nzActive]="false">
+          <p>
+            Enabling your 2FA authenticator on the app is easy if you follow the below steps or prompt on the app;
+      <br>
+            On the LemonEx mobile app, you have two 2FA options which are the  <br>
+
+            <b>Email authenticator </b>  <br>
+            -Click on Enable <br>
+            -An email with the verification code will be sent to your registered email. <br>
+            -Copy the email and paste on the app <br>
+            -Click on submit <br>
+            -A pop up will appear that your ‘Two-Factor Authentication has been successfully enabled. <br>
+
+           <b>Google authenticator</b>  <br>
+
+            To activate your Google 2FA follow these steps: <br>
+
+            -Download any of the authenticator apps listed from your app or play store. <br>
+            -Once the download is done, go back to the app and tap on Enable
+            Copy the secret key above  <br>
+            -Ensure you copy this key and save it in a secure place, as it would be needed to reset 2FA on your account if you lose your phone, or you're unable to access your 2FA for whatever reason. <br>
+            -Go to your installed Google Authenticator app (iOS/Android) on your smartphone and open it. <br>
+            -Click on ‘Begin’ or Click on the Plus sign in the Google Authenticator app <br>
+            -Select Manual entry option <br>
+            -Enter an account name you want to save the Code as, then paste the secret key from LemonEx in the Google Authenticator app and click on ‘Add’ or the Check sign <br>
+            -Type the 6 digit code that appears into the box that reads verification code at the top on the LemonEx app. Note that the code needs to be entered before the timer starts counting again <br>
+            -Click on submit <br>
+            -A pop up will appear that your ‘Two-Factor Authentication has been successfully enabled.
+          </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+
+
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category9header3" [nzActive]="false">
+          <p>To deactivate your 2FA authentication is easy. <br>
+            -Click on the horizontal lines displayed on the top left corner of your dashboard. <br>
+            -On the next page that loads you will see SECURITY, please click on it. <br>
+            -On the next page an option to disable your 2FA <br>
+            -Click on Disable to disable your 2FA.</p>
+        </nz-collapse-panel>
+      </nz-collapse>
+
+  <nz-collapse  [nzBordered]="false" nzAccordion>
+    <nz-collapse-panel   [nzHeader]="category9header4" [nzActive]="false">
+      <p>You can change or switch to another 2FA on the app, to do that follow the below process. <br>
+        -Login to your app <br>
+        -Click on the horizontal lines displayed on the top left corner of your dashboard. <br>
+        -On the next page that loads you will see SECURITY, please click on it. <br>
+        -On the next page the 2FA options will be displayed <br>
+        -Click on disable on the 2FA you no longer want to use <br>
+        -Select the 2FA of your choice click on Enable and follow the prompt</p>
+    </nz-collapse-panel>
+  </nz-collapse>
+  <nz-collapse  [nzBordered]="false" nzAccordion>
+    <nz-collapse-panel   [nzHeader]="category9header5" [nzActive]="false">
+      <p>Kindly note that once you disable your 2FA you will be unable to carry out any activities on the LemonEx app.
+      </p>
+    </nz-collapse-panel>
+  </nz-collapse>
+
+
+</div>
+  </div>
+  <div *ngIf="Id == 10" class="col">
+    <div class="rcorners">
+      <nz-collapse  [nzBordered]="false" nzAccordion>
+        <nz-collapse-panel   [nzHeader]="category10header1" [nzActive]="false">
+          <p> Send a mail to <a  href = "mailto: helpzone@lemoniafrica.com">helpzone@lemoniafrica.com</a>  </p>
+        </nz-collapse-panel>
+      </nz-collapse>
+</div>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- <div class="col">
+  <nz-collapse nzAccordion>
+    <nz-collapse-panel style="color: white;" *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active">
+      <p>{{ panel.content }}</p>
+    </nz-collapse-panel>
+  </nz-collapse>
+</div> -->

@@ -49,6 +49,7 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { OurServicesComponent } from './Components/our-services/our-services.component';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
+import { HelpCenterComponent } from './Components/help-center/help-center.component';
 
 registerLocaleData(en);
 
@@ -61,6 +62,7 @@ registerLocaleData(en);
     CompanyComponent,
     AboutUsComponent,
     OurServicesComponent,
+    HelpCenterComponent,
   ],
   imports: [
     BrowserModule,
